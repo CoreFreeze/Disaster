@@ -1,0 +1,7 @@
+~$DB Function List.xlsx
+__pycache__
+build
+disaster_env
+dist
+test
+*.spec
