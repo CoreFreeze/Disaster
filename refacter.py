@@ -170,6 +170,9 @@ class myApplication(QMainWindow):
         self.communication.requestDBFunc(client=None, context=4, request=18, data=(date.toString('yyyy-MM-dd'),))
 
     def addToMainTable(self, disasterList):
+        self.clearDisasterArea()
+        self.clearSpotArea()
+        self.clearProgramArea()
         self.ui.dataTable.clearContents()
         self.ui.dataTable.setRowCount(len(disasterList))
         for index, disaster in enumerate(disasterList):

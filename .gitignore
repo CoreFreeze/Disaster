@@ -5,3 +5,4 @@ disaster_env
 dist
 test
 *.spec
+*.db

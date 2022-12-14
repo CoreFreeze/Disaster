@@ -163,6 +163,9 @@ class myApplication(QMainWindow):
 
     def addToMainTable(self, disasterList):
         self.ui.dataTable.clearContents()
+        self.clearDisasterArea()
+        self.clearSpotArea()
+        self.clearProgramArea()
         self.ui.dataTable.setRowCount(len(disasterList))
         for index, disaster in enumerate(disasterList):
             self.ui.dataTable.setItem(index, 0, QTableWidgetItem(disaster[0])) # 프로그램 명
