@@ -64,7 +64,9 @@ class myApplication(QMainWindow):
 
     def initUI(self):
         self.ui.tabWidget.setTabVisible(2, False)
+        # tab 숨기기 
         self.ui.tabWidget.setTabVisible(1, False)
+        #
         self.ui.tagTable.setColumnCount(3)
         self.communication.requestDBFunc(client=None, context=1, request=1,data=None)
         
